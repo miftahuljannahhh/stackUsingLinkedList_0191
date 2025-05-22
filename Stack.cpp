@@ -54,9 +54,13 @@ private:
    else
    {
       Node *current = top;
-   }
+      while (current != NULL)
+      {
+         cout << current->data << " " << endl;
+         current = current->next;
+      }
+      cout << endl;
+   } // Return the value of the top node
  }
 
-};
-
-
+ 
