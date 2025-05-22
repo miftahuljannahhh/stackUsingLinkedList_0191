@@ -44,6 +44,19 @@ private:
    cout << "Popped value:" << top->data << endl;
  }
 
+ // Peek/Top operation: Retrieve the value of the tompost element without removing
+ void peek()
+ {
+   if (top == NULL)
+   {
+      cout << "List is empty." << endl;
+   }
+   else
+   {
+      Node *current = top;
+   }
+ }
+
 };
 
 
