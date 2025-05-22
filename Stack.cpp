@@ -30,6 +30,20 @@ private:
    newNode->next = top; // 3. Set the next pointer of the new nodeto the current top
    top = newNode; // 4. Update the top pointer to the new node
    cout << "Push value: " << value << endl;
+   return value;
+ }
+
+ // Pop operation: Remove the tompost elemnt from the stack
+ void pop() {
+   if (isEmpty()) {
+      cout << "Stack is empty." << endl;
+   }
+
+   Node* temp = top; // Create a temporary pointer to the top node
+   top = top->next; // Update the top pointer to the next node
+   cout << "Popped value:" << top->data << endl;
  }
 
 };
+
+
