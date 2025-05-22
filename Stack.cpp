@@ -98,6 +98,11 @@ int main()
          {
             stack.pop(); // Pop the element from the stack
          }
+         else 
+         {
+            cout << "Stack is empty. Cannot pop." << endl;
+         }
+         break;
       }
 }
 
